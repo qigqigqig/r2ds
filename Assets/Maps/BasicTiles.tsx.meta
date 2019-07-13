@@ -1,0 +1,105 @@
+fileFormatVersion: 2
+guid: 4a57ef21ea264504b8013f63a3562607
+ScriptedImporter:
+  fileIDToRecycleName:
+    2800000: Atlas_BasicTiles_1
+    11400000: _TilesetScriptObject
+    11400002: _superAsset
+    11400004: Tile_BasicTiles_1
+    11400006: Tile_BasicTiles_2
+    11400008: Tile_BasicTiles_3
+    11400010: Tile_BasicTiles_4
+    11400012: Tile_BasicTiles_5
+    11400014: Tile_BasicTiles_6
+    11400016: Tile_BasicTiles_7
+    11400018: Tile_BasicTiles_8
+    11400020: Tile_BasicTiles_9
+    11400022: Tile_BasicTiles_10
+    11400024: Tile_BasicTiles_11
+    11400026: Tile_BasicTiles_12
+    11400028: Tile_BasicTiles_13
+    11400030: Tile_BasicTiles_14
+    11400032: Tile_BasicTiles_15
+    11400034: Tile_BasicTiles_16
+    11400036: Tile_BasicTiles_17
+    11400038: Tile_BasicTiles_18
+    11400040: Tile_BasicTiles_19
+    11400042: Tile_BasicTiles_20
+    11400044: Tile_BasicTiles_21
+    11400046: Tile_BasicTiles_22
+    11400048: Tile_BasicTiles_23
+    11400050: Tile_BasicTiles_24
+    11400052: Tile_BasicTiles_25
+    11400054: Tile_BasicTiles_26
+    11400056: Tile_BasicTiles_27
+    11400058: Tile_BasicTiles_28
+    11400060: Tile_BasicTiles_29
+    11400062: Tile_BasicTiles_30
+    11400064: Tile_BasicTiles_31
+    11400066: Tile_BasicTiles_32
+    11400068: Tile_BasicTiles_33
+    11400070: Tile_BasicTiles_34
+    11400072: Tile_BasicTiles_35
+    11400074: Tile_BasicTiles_36
+    11400076: Tile_BasicTiles_37
+    11400078: Tile_BasicTiles_38
+    11400080: Tile_BasicTiles_39
+    21300000: Sprite_BasicTiles_1
+    21300002: Sprite_BasicTiles_2
+    21300004: Sprite_BasicTiles_3
+    21300006: Sprite_BasicTiles_4
+    21300008: Sprite_BasicTiles_5
+    21300010: Sprite_BasicTiles_6
+    21300012: Sprite_BasicTiles_7
+    21300014: Sprite_BasicTiles_8
+    21300016: Sprite_BasicTiles_9
+    21300018: Sprite_BasicTiles_10
+    21300020: Sprite_BasicTiles_11
+    21300022: Sprite_BasicTiles_12
+    21300024: Sprite_BasicTiles_13
+    21300026: Sprite_BasicTiles_14
+    21300028: Sprite_BasicTiles_15
+    21300030: Sprite_BasicTiles_16
+    21300032: Sprite_BasicTiles_17
+    21300034: Sprite_BasicTiles_18
+    21300036: Sprite_BasicTiles_19
+    21300038: Sprite_BasicTiles_20
+    21300040: Sprite_BasicTiles_21
+    21300042: Sprite_BasicTiles_22
+    21300044: Sprite_BasicTiles_23
+    21300046: Sprite_BasicTiles_24
+    21300048: Sprite_BasicTiles_25
+    21300050: Sprite_BasicTiles_26
+    21300052: Sprite_BasicTiles_27
+    21300054: Sprite_BasicTiles_28
+    21300056: Sprite_BasicTiles_29
+    21300058: Sprite_BasicTiles_30
+    21300060: Sprite_BasicTiles_31
+    21300062: Sprite_BasicTiles_32
+    21300064: Sprite_BasicTiles_33
+    21300066: Sprite_BasicTiles_34
+    21300068: Sprite_BasicTiles_35
+    21300070: Sprite_BasicTiles_36
+    21300072: Sprite_BasicTiles_37
+    21300074: Sprite_BasicTiles_38
+    21300076: Sprite_BasicTiles_39
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: cc34d0f3dc257a442819830b408c5322, type: 3}
+  missingFiles:
+  - Assets/MiscTiles/Tree_001.png
+  errors:
+  - 'Missing texture asset for tile 39: ../MiscTiles/Tree_001.png'
+  warnings: []
+  missingSortingLayers: []
+  missingLayers: []
+  missingTags: []
+  importerVersion: 8
+  pixelsPerUnit: 100
+  edgesPerEllipse: 32
+  numberOfObjectsImported: 81
+  useSpriteAtlas: 1
+  atlasWidth: 2048
+  atlasHeight: 2048

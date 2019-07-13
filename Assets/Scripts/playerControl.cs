@@ -1,25 +1,37 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class playerControl : MonoBehaviour {
+public class playerControl : MonoBehaviour
+{
     public float moveSpeed;
+    public Text HP;
+    public int hpValue;
     private Rigidbody2D myrigidbody;
     private Animator anim;
     private bool playerMoving;
     private Vector2 lastMove;
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start()
+    {
         anim = GetComponent<Animator>();
         myrigidbody = GetComponent<Rigidbody2D>();
-         
-		
-	}
+
+
+    }
 
     // Update is called once per frame
-    void Update() {
+    void Update()
+    {
+
+
+        HP.text = "HP: " + hpValue;
+
+
+
         playerMoving = false;
-       // Debug.Log(Input.GetAxisRaw("HoriR"));
+        // Debug.Log(Input.GetAxisRaw("HoriR"));
         Debug.Log(Input.GetAxisRaw("VertR"));
         if (Input.GetAxisRaw("Horizontal") > 0.5f || Input.GetAxisRaw("Horizontal") < -0.5f)
         {
@@ -31,18 +43,18 @@ public class playerControl : MonoBehaviour {
 
         }
         if (Input.GetButtonDown("Fire1"))
-            {
+        {
 
             Vector2 dir;
             float deadZone = 0.2f;
             float rightX = Input.GetAxis("HoriR");
             float rightY = Input.GetAxis("VertR");
             dir = new Vector2(rightX, rightY);
-          //  Debug.Log(dir);
-         //   if (dir.sqrMagnitude > deadZone)
-           // {
-                dir.Normalize();
-                Debug.Log("Right Stick Location: " + dir);
+            //  Debug.Log(dir);
+            //   if (dir.sqrMagnitude > deadZone)
+            // {
+            dir.Normalize();
+            Debug.Log("Right Stick Location: " + dir);
 
             //}
             //Debug.Log("Hi");
@@ -72,15 +84,15 @@ public class playerControl : MonoBehaviour {
         }
         if (Input.GetAxisRaw("Horizontal") < 0.5f && Input.GetAxisRaw("Horizontal") > -0.5f)
         {
-           
+
             myrigidbody.velocity = new Vector2(0f, myrigidbody.velocity.y);
-            
+
         }
         if (Input.GetAxisRaw("Vertical") < 0.5f && Input.GetAxisRaw("Vertical") > -0.5f)
         {
-          
+
             myrigidbody.velocity = new Vector2(myrigidbody.velocity.x, 0f);
-            
+
         }
         anim.SetFloat("Movex", Input.GetAxisRaw("Horizontal"));
         anim.SetFloat("movey", Input.GetAxisRaw("Vertical"));
@@ -89,4 +101,25 @@ public class playerControl : MonoBehaviour {
         anim.SetFloat("lastmovey", lastMove.y);
 
     }
+    void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Enemy")
+        {
+            StartCoroutine(waiter());
+
+            
+
+        }
+    }
+
+     IEnumerator waiter()
+    {
+        anim.SetBool("playerHurt", true);
+        Debug.Log("Test");
+        hpValue = hpValue - 5;
+        yield return new WaitForSeconds(1);
+        anim.SetBool("playerHurt", false);
+
+    }
+
 }
